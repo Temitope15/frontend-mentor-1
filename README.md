@@ -71,7 +71,7 @@ To see how i used it, see below:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Temitope15](https://www.frontendmentor.io/profile/Temitope15)
 - Twitter - [@Sun_MadeCodes](https://www.twitter.com/Sun_MadeCodes)
 
 
