@@ -1,0 +1,61 @@
+:root {
+  --whiteColor: hsl(0, 0%, 100%);
+  --lightBlue: hsl(212, 45%, 89%);
+  --blueGrey: hsl(220, 15%, 55%);
+  --deepBlue: hsl(218, 44%, 22%);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--lightBlue);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+ 
+}
+.parent {
+  padding: 1em;
+  min-width: 200px;
+  height: 500px;
+  position: relative;
+}
+.card {
+  width: 250px;
+  background-color: var(--whiteColor);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  width: 230px;
+  border-radius: 10px;
+}
+.text {
+  text-align: center;
+  color: var(--deepBlue);
+  font-size: 0.8rem;
+}
+h3 {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
