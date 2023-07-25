@@ -62,7 +62,31 @@ To see how i used it, see below:
   transform: translate(-50%, -50%);
 }
 ```
-
+### Refactoring Process
+- I decided to remove the transform translate property in my css file upon advice from a frontend mentor on [Frontend mentor] (https://www.frontendmentor.io/) to use the flex box model.
+- So this is what i did to center my div
+  ```css
+  .parent {
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  gap:10px;
+ }
+ .card {
+  width: 250px;
+  background-color: var(--whiteColor);
+  padding: 10px;
+  border-radius: 10px;
+  
+/* to center the children elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  ```
 
 ### Useful resources
 
