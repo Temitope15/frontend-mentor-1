@@ -10,6 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Refactoring process](#refactoring-process)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -63,35 +64,53 @@ To see how i used it, see below:
 }
 ```
 ### Refactoring Process
-- I decided to remove the transform translate property in my css file upon advice from a frontend mentor on [Frontend mentor] (https://www.frontendmentor.io/) to use the flex box model.
+- I decided to remove the transform translate property in my css file upon advice from a frontend mentor on Frontend mentor (https://www.frontendmentor.io/) to use the flex box model.
 - So this is what i did to center my div
   ```css
   .parent {
+    /*give the parent element a 100vw and 100vh*/
   width: 100vw;
   height:100vh;
+
+  /* Then apply flex to center*/
   display: flex;
   align-items:center;
   justify-content: center;
   flex-direction:column;
   gap:10px;
- }
- .card {
+  }
+  .card{
+    /* major styling */
   width: 250px;
   background-color: var(--whiteColor);
   padding: 10px;
   border-radius: 10px;
-  
-/* to center the children elements */
+  /* to center the children elements */
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  }
   ```
 
+  - I also updated the font to the font recommended in the style guide. I used google fonts.
+
+  **How to use google fonts**
+  ```html
+  <!-- copy the link to the font you want from font.google.com -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  ```
+   ```css
+   /* use the style rules in the element you wish to use it*/
+    body{
+        font-family: 'Outfit', sans-serif;
+        }
+   ```
 ### Useful resources
 
 - [Major Resource](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/) - This blog post helped me to be able to center my div using the transform translate css property.
-
+- [W3Schools](https://www.w3schools.com/css/css_font_google.asp) - Here i learned how to use the google font in my code
 
 ## Author
 
